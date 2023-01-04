@@ -8,3 +8,5 @@ x and y coordinates for searching.
 
 The first x lines of the output file will contain smoothie shops coordinates, with the next z lines containing answer
 each of the z queries of input. It will state if a smoothie shop is not found at the specific poits of data.
+
+Note: Use leak detectors in project 1!
