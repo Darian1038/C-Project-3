@@ -77,8 +77,7 @@ input readData()
   return data;
 }
 
-//compares 2 given points and follows the given rules in the  
-//program assignment file
+//compares 2 given points 
 int compareTo(coordinates *ptrPt1, coordinates *ptrPt2)
 {
 
@@ -139,8 +138,6 @@ void insertionSort(coordinates *arr, int l, int r)
 // Merges two subarrays of arr[].
 // First subarray is arr[l..m]
 // Second subarray is arr[m+1..r]
-//I utilized the merge code from ahmed and changed 
-//it to fit with my code
 void merge(coordinates *arr, int l, int m, int r)
 {
   int i, j, k;
@@ -174,16 +171,14 @@ void merge(coordinates *arr, int l, int m, int r)
     }
     k++;
   }
-  /* Copy the remaining elements of L[], if there
-     are any */
+
   while (i < n1)
   {
     arr[k] = L[i];
     i++;
     k++;
   }
-  /* Copy the remaining elements of R[], if there
-     are any */
+
   while (j < n2)
   {
     arr[k] = R[j];
@@ -194,9 +189,7 @@ void merge(coordinates *arr, int l, int m, int r)
   free(R);
 }
 
-/* l is for left index and r is right index of the
-   sub-array of arr to be sorted */
-//this is also ahmeds code but modified to fit my code
+
 void mergeSort(coordinates *arr, int l, int r, int threshold)
 {
   int length = r - l;
